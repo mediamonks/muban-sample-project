@@ -1,0 +1,19 @@
+@import '~normalize.css';
+@import '~seng-scss';
+
+/* Globally available project specific mixins, functions and variables */
+@import 'global';
+
+@import 'type/font';
+
+// Generic stuff
+
+html {
+  box-sizing: border-box;
+  font-family: $fontRobotoCondensed;
+  font-size: 10px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}

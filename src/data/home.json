@@ -1,0 +1,13 @@
+{
+  "title": "Home",
+  "blocks": [
+    {
+      "name": "navigation",
+      "data": "import!../app/component/block/navigation/default.json"
+    },
+    {
+      "name": "hero",
+      "data": "import!../app/component/block/hero/default.json"
+    }
+  ]
+}

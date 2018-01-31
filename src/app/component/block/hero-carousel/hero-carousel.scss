@@ -1,0 +1,13 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="hero-carousel"] {
+  background-color: $colorBlack;
+  height: $blockSize * 6.5;
+
+  @include respond-to(MEDIUM) {
+    height: $blockSize * 10;
+  }
+
+  @include respond-to(LARGE) {
+    height: ($blockSize * 13);
+  }
+}

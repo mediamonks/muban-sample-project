@@ -1,0 +1,28 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="hero-carousel-type"] {
+  @include size(100%);
+  position: relative;
+  background-color: $colorBlack;
+  color: $colorWhite;
+  overflow: hidden;
+
+  .hero-carousel-list {
+    @include size(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero-carousel-item {
+    @include size(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center center;
+  }
+}

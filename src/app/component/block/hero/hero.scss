@@ -1,0 +1,31 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="hero"] {
+  height: $blockSize * 6.5;
+  display: flex;
+  background: $colorBlack center center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+
+  .hero-title {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+  }
+
+  @include respond-to(MEDIUM) {
+    height: $blockSize * 10;
+
+    .hero-title {
+      font-size: 3rem;
+    }
+  }
+
+  @include respond-to(LARGE) {
+    height: ($blockSize * 13);
+
+    .hero-title {
+      font-size: 5rem;
+    }
+  }
+}

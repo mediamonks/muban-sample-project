@@ -1,0 +1,55 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="navigation"] {
+  .navigation {
+    position: relative;
+    height: 64px;
+    background-color: $colorBlack;
+    display: flex;
+  }
+
+  .site-logo {
+    display: inline-block;
+    padding: $blockSize * .25;
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: $colorWhite;
+
+      img  {
+        height: 100%;
+        width: auto;
+      }
+  }
+
+  .menu {
+    @include position(0);
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    position: absolute;
+    height: 100%;
+  }
+
+  .menu-item {
+    display: block;
+    height: 100%;
+  }
+
+  .menu-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 15px;
+    text-decoration: none;
+    transition: color .2s $easeInOutCubic;
+    color: $colorWhite;
+    font-size: 1.5rem;
+
+    @include hover() {
+      color: $colorRed;
+    }
+  }
+}

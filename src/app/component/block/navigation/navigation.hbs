@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="./navigation.scss">
+<script src="./Navigation.ts"></script>
+
+<section data-component="navigation">
+  <nav class="navigation">
+    <a href="/" class="site-logo">
+      {{#if site-logo}}
+        <img src="{{site-logo}}" alt="{{site-name}}">
+        {{else}}
+        {{site-name}}
+      {{/if}}
+    </a>
+    <ul class="menu">
+      {{#each menu.items}}
+        <li class="menu-item">
+          <a class="menu-link" href="{{url}}">
+            <span class="label">{{label}}</span>
+          </a>
+        </li>
+      {{/each}}
+    </ul>
+  </nav>
+</section>

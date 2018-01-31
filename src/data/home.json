@@ -8,6 +8,10 @@
     {
       "name": "hero",
       "data": "import!../app/component/block/hero/default.json"
+    },
+    {
+      "name": "intro-content",
+      "data": "import!../app/component/block/intro-content/default.json"
     }
   ]
 }

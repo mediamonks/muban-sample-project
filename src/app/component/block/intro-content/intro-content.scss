@@ -1,0 +1,29 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="intro-content"] {
+  .intro-wrapper {
+    padding: 0 $blockSize * 0.25;
+    width: 100%;
+    max-width: $blockSize * 19;
+    margin: 0 auto;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+  }
+
+  .intro-subtitle {
+    font-size: 1.8rem;
+  }
+
+  @include respond-to(MEDIUM) {
+    padding: 0 $blockSize * 0.5;
+
+    .intro-title {
+      font-size: 3rem;
+    }
+
+    .intro-subtitle {
+      font-size: 2.8rem;
+    }
+  }
+}

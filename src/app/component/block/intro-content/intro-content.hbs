@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="./intro-content.scss">
+<script src="./IntroContent.ts"></script>
+
+<section data-component="intro-content">
+  <div class="intro-wrapper">
+    <h2 class="intro-title">{{title}}</h2>
+    <h3 class="intro-subtitle">{{subtitle}}</h3>
+
+    {{#each paragraphs}}
+        {{> element/paragraph content=copy}}
+    {{/each}}
+  </div>
+</section>

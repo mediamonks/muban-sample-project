@@ -1,0 +1,11 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="footer"] {
+  height: 50px;
+  background-color: $colorBlack;
+  width: 100%;
+  color: $colorWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}

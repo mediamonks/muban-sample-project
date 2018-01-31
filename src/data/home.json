@@ -12,6 +12,10 @@
     {
       "name": "intro-content",
       "data": "import!../app/component/block/intro-content/default.json"
+    },
+    {
+      "name": "footer",
+      "data": "import!../app/component/block/footer/default.json"
     }
   ]
 }

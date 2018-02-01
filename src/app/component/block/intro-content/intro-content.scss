@@ -1,7 +1,7 @@
 /* stylelint-disable-next-line block-no-empty */
 [data-component="intro-content"] {
   .intro-wrapper {
-    padding: 0 $blockSize * 0.25;
+    padding: $blockSize $blockSize * 0.25 0;
     width: 100%;
     max-width: $blockSize * 19;
     margin: 0 auto;

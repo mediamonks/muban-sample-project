@@ -6,6 +6,7 @@
     "dev": "webpack-dev-server --config build-tools/config/webpack/webpack.config.js",
     "dev:code": "webpack --config build-tools/config/webpack/webpack.config.code.dev.js --watch",
     "build": "node ./build-tools/script/build",
+    "build:component": "webpack --config build-tools/config/webpack/webpack.config.component.dist.js",
     "preview": "http-server ./dist/site --p 9001 -s -o",
     "compile:code": "npm run build dist",
     "compile:partials": "npm run build partials",

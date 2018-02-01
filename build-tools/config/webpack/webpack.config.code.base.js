@@ -18,15 +18,15 @@ const projectRoot = path.resolve(__dirname, '../../../');
 
 module.exports = merge(require('./webpack.config.base'), {
   entry: {
-    common: [
-      './src/app/polyfills.js',
-      'modernizr',
-      './src/app/component/layout/app/app.hbs',
-    ],
-    bundle: [
-      './src/app/bundle.js',
-      './src/app/dist.js',
-    ],
+    // common: [
+    //   './src/app/polyfills.js',
+    //   'modernizr',
+    //   './src/app/component/layout/app/app.hbs',
+    // ],
+    // bundle: [
+    //   './src/app/bundle.js',
+    //   './src/app/dist.js',
+    // ],
   },
   resolve: {
     extensions: ['.hbs', '.ts', '.js', '.json'],
@@ -74,8 +74,8 @@ module.exports = merge(require('./webpack.config.base'), {
     new webpack.optimize.CommonsChunkPlugin({
       name: 'common',
 
-      minChunks: function(module){
-        return module.context && module.context.indexOf("node_modules") !== -1;
+      minChunks: function(module, count){
+        return (count > 2 || (module.context && (module.context.includes("node_modules") || module.context.includes("app/muban") || module.context.includes("html-extract-data"))));
       }
     }),
     new ExtractTextPlugin({

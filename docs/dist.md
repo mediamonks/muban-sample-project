@@ -33,7 +33,7 @@ Follow the steps below to integrate the files in this package into your own webs
 2. Use the `*.html` preview pages and the `template/*.hbs` templates to implement the HTML in your
    own website.
 3. Include the `asset/common.css` and `asset/bundle.css` in the html `<head>`, and the
-   `asset/common.js` and `asset/bundle.js` just below the closing `</body>` tag.
+   `asset/common.js` and `asset/bundle.js` just before the closing `</body>` tag.
 4. Copy over the `<head>` section from `site/index.html` as good as possible, so all information
    like doctype, charset, meta tags, icons, etc are present on your own website. Some tags like
    icons are optional, but the `<meta ...>` are all needed to guaranty the website is displayed

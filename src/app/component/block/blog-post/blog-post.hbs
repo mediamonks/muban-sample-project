@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="./blog-post.scss">
+<script src="./BlogPost.ts"></script>
+
+<section data-component="blog-post">
+  <div class="blog-post-wrapper">
+    <div class="post-content">
+      <div class="post-summary">
+        <h3 class="post-tag-line">{{tag-line}}</h3>
+        <h2 class="post-title">{{title}}</h2>
+        <p class="post-description">
+          {{{ description }}}
+        </p>
+      </div>
+
+      <div class="post-buttons">
+        <span class="post-author">
+          By {{author}} - {{author-role}}
+        </span>
+        {{#each buttons}}
+          {{> element/default-button }}
+        {{/each}}
+      </div>
+    </div>
+    <div class="post-thumbnail">
+      <img src="{{thumbnail}}"/>
+    </div>
+  </div>
+</section>

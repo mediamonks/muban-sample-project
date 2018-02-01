@@ -1,0 +1,84 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="blog-post"] {
+  .blog-post-wrapper {
+    padding: $blockSize $blockSize * 0.25;
+    width: 100%;
+    max-width: $blockSize * 19;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 2;
+  }
+
+  .post-summary {
+
+    .post-tag-line {
+      font-size: 1.8rem;
+    }
+
+    .post-title {
+      font-size: 2.4rem;
+    }
+
+    .post-description {
+      font-size: 1.6rem;
+    }
+  }
+
+  .post-buttons {
+    font-size: 1.6rem;
+  }
+
+  .post-author {
+    font-size: 1.8rem;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .post-thumbnail {
+    @include aspect-ratio(16,9);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: $blockSize * 0.5;
+
+    img {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      width: 100%;
+    }
+  }
+
+
+  @include respond-to(MEDIUM) {
+    .blog-post-wrapper {
+      flex-direction: row;
+    }
+
+    .post-content,
+    .post-thumbnail {
+      width: 50%;
+    }
+
+    .post-content {
+      padding-right: $blockSize * 0.5;
+      order: 1;
+      line-height: 1.5;
+    }
+
+    .post-thumbnail {
+      @include aspect-ratio(1);
+      margin-bottom: 0;
+      order: 2;
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/* stylelint-disable-next-line block-no-empty */
+[data-component="default-button"] {
+  display: inline-block;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: all 250ms ease;
+  border: 2px solid $colorBlack;
+  color: $colorBlack;
+
+  &:after{
+    background-color: $colorBlack;
+  }
+
+  &:hover{
+    color: white;
+
+    &:after{
+      animation-name: bgin;
+      transform: skew(-45deg) translate(-50%);
+    }
+  }
+
+  &:after {
+    content: '';
+    z-index: -1;
+    width: 150%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    animation-name: bgout;
+    animation-duration:400ms;
+    transform: skew(-45deg) translate(-150%);
+  }
+}
+
+@keyframes bgin{
+  from {
+    transform: skew(-45deg) translate(-150%);
+  }
+  to {
+    transform: skew(-45deg) translate(-50%);
+  }
+}
+@keyframes bgout{
+  from {
+    transform: skew(-45deg) translate(-50%);
+  }
+  to {
+    transform: skew(-45deg) translate(50%);
+  }
+}

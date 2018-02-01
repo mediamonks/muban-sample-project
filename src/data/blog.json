@@ -1,0 +1,17 @@
+{
+  "title": "Blog",
+  "blocks": [
+    {
+      "name": "navigation",
+      "data": "import!../app/component/block/navigation/default.json"
+    },
+    {
+      "name": "blog-post",
+      "data": "import!../app/component/block/blog-post/default.json"
+    },
+    {
+      "name": "footer",
+      "data": "import!../app/component/block/footer/default.json"
+    }
+  ]
+}

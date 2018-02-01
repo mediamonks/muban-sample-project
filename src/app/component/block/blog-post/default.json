@@ -1,0 +1,18 @@
+{
+  "tag-line": "From the blog",
+  "title": "How to prevent rust and maintain an device",
+  "author": "Jan Jansen",
+  "author-role": "Guest Blogger",
+  "description": "You take the cover off your device and what do you see, surface rust! No, the world is not going to end and yes we are here to help you. <br><br> Nulla scelerisque, magna a pharetra consequat, quam lectus imperdiet eros, id consequat eros erat quis mauris. Phasellus eu lectus ut justo sagittis molestie. Quisque varius sapien eget mattis interdum. Nunc sed sem hendrerit, egestas felis id, pharetra quam. Proin eget magna lectus. Pellentesque malesuada, ligula non congue luctus, orci metus porttitor dui, sit amet interdum tortor purus ut nibh. Cras sagittis aliquam lectus vel gravida. Etiam pellentesque tristique odio at tristique.",
+  "thumbnail": "/images/blog/thumb.jpg",
+  "buttons": [
+    {
+      "label": "Read Full Post",
+      "url": "/"
+    },
+    {
+      "label": "Go To Blog",
+      "url": "/blog.html"
+    }
+  ]
+}

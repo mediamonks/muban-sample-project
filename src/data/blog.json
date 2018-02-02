@@ -6,6 +6,10 @@
       "data": "import!../app/component/block/navigation/default.json"
     },
     {
+      "name": "hero-carousel",
+      "data": "import!../app/component/block/hero-carousel/default.json"
+    },
+    {
       "name": "blog-post",
       "data": "import!../app/component/block/blog-post/default.json"
     },

@@ -25,4 +25,54 @@
     background-size: cover;
     background-position: center center;
   }
+
+  .navigation-bullets {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    color: $colorBlack;
+    position: absolute;
+    bottom: $blockSize * .5;
+    width: 100%;
+
+    &.light {
+      color: $colorWhite;
+    }
+  }
+  .bullet-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 $bulletSize;
+    padding: 0;
+  }
+  .bullet-button {
+    @include size($bulletSize);
+    position: relative;
+    display: block;
+    cursor: pointer;
+    color: currentColor;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    &:before {
+      @include size($bulletSize);
+      display: block;
+      margin: 0;
+      content: '';
+      border: 1px solid currentColor;
+      border-radius: 50%;
+      transition: border 200ms linear;
+    }
+
+    &.is-active:before {
+      border-width: 1px solid currentColor;
+      padding: 0;
+      background: currentColor;
+      margin: 0;
+    }
+  }
 }

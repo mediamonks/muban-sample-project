@@ -10,10 +10,10 @@
     {{/each}}
   </ul>
 
-  {{> element/arrow-button className="previous js-previous" }}
-  {{> element/arrow-button className="next js-next" }}
+  {{!-- {{> element/arrow-button className="previous js-previous" }} --}}
+  {{!-- {{> element/arrow-button className="next js-next" }} --}}
 
-  {{#if show-bullets}}
-    <ul class="navigation-bullets js-bullets light"></ul>
-  {{/if}}
+{{#if show-bullets}}
+  <ul class="navigation-bullets js-bullets light"></ul>
+{{/if}}
 </section>

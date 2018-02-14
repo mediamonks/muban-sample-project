@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "0c69ff4ce3a66e5af29d"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "5db1429d5a40807f3e94"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -44277,7 +44277,7 @@ exports.isBuffer = function isBuffer(obj) {
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/blog-post/BlogPost.ts":
 /***/ (function(module, exports) {
 
-module.exports = "import AbstractBlock from \"../AbstractBlock\";\n\nexport default class BlogPost extends AbstractBlock {\n  static displayName:string = 'blog-post';\n\n  constructor(el:HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
+module.exports = "import AbstractBlock from '../AbstractBlock';\n\nexport default class BlogPost extends AbstractBlock {\n  static displayName: string = 'blog-post';\n\n  constructor(el: HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
 
 /***/ }),
 
@@ -44291,14 +44291,14 @@ module.exports = "<link rel=\"stylesheet\" href=\"./blog-post.scss\">\n<script s
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/blog-post/blog-post.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"blog-post\"] {\n  .blog-post-wrapper {\n    padding: $blockSize $blockSize * 0.25;\n    width: 100%;\n    max-width: $blockSize * 19;\n    margin: 0 auto;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .post-content {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    order: 2;\n  }\n\n  .post-summary {\n\n    .post-tag-line {\n      font-size: 1.8rem;\n    }\n\n    .post-title {\n      font-size: 2.4rem;\n    }\n\n    .post-description {\n      font-size: 1.6rem;\n    }\n  }\n\n  .post-buttons {\n    font-size: 1.6rem;\n  }\n\n  .post-author {\n    font-size: 1.8rem;\n    display: block;\n    padding: 10px 0;\n  }\n\n  .post-thumbnail {\n    @include aspect-ratio(16,9);\n    width: 100%;\n    overflow: hidden;\n    position: relative;\n    margin-bottom: $blockSize * 0.5;\n\n    img {\n      left: 50%;\n      top: 50%;\n      transform: translate(-50%, -50%);\n      position: absolute;\n      width: 100%;\n    }\n  }\n\n\n  @include respond-to(MEDIUM) {\n    .blog-post-wrapper {\n      flex-direction: row;\n    }\n\n    .post-content,\n    .post-thumbnail {\n      width: 50%;\n    }\n\n    .post-content {\n      padding-right: $blockSize * 0.5;\n      order: 1;\n      line-height: 1.5;\n    }\n\n    .post-thumbnail {\n      @include aspect-ratio(1);\n      margin-bottom: 0;\n      order: 2;\n    }\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='blog-post'] {\n  .blog-post-wrapper {\n    padding: $blockSize $blockSize * 0.25;\n    width: 100%;\n    max-width: $blockSize * 19;\n    margin: 0 auto;\n    display: flex;\n    flex-direction: column;\n  }\n\n  .post-content {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    justify-content: space-between;\n    order: 2;\n  }\n\n  .post-summary {\n    .post-tag-line {\n      font-size: 1.8rem;\n    }\n\n    .post-title {\n      font-size: 2.4rem;\n    }\n\n    .post-description {\n      font-size: 1.6rem;\n    }\n  }\n\n  .post-buttons {\n    font-size: 1.6rem;\n  }\n\n  .post-author {\n    font-size: 1.8rem;\n    display: block;\n    padding: 10px 0;\n  }\n\n  .post-thumbnail {\n    @include aspect-ratio(16,9);\n    width: 100%;\n    overflow: hidden;\n    position: relative;\n    margin-bottom: $blockSize * 0.5;\n\n    img {\n      left: 50%;\n      top: 50%;\n      transform: translate(-50%, -50%);\n      position: absolute;\n      width: 100%;\n    }\n  }\n\n  @include respond-to(MEDIUM) {\n    .blog-post-wrapper {\n      flex-direction: row;\n    }\n\n    .post-content,\n    .post-thumbnail {\n      width: 50%;\n    }\n\n    .post-content {\n      padding-right: $blockSize * 0.5;\n      order: 1;\n      line-height: 1.5;\n    }\n\n    .post-thumbnail {\n      @include aspect-ratio(1);\n      margin-bottom: 0;\n      order: 2;\n    }\n  }\n}\n"
 
 /***/ }),
 
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/footer/Footer.ts":
 /***/ (function(module, exports) {
 
-module.exports = "import AbstractBlock from \"../AbstractBlock\";\n\nexport default class Footer extends AbstractBlock {\n  static displayName:string = 'footer';\n\n  constructor(el:HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
+module.exports = "import AbstractBlock from '../AbstractBlock';\n\nexport default class Footer extends AbstractBlock {\n  static displayName: string = 'footer';\n\n  constructor(el: HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
 
 /***/ }),
 
@@ -44312,14 +44312,14 @@ module.exports = "<link rel=\"stylesheet\" href=\"./footer.scss\">\n<script src=
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/footer/footer.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"footer\"] {\n  height: 50px;\n  background-color: $colorBlack;\n  width: 100%;\n  color: $colorWhite;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 1.4rem;\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='footer'] {\n  height: 50px;\n  background-color: $colorBlack;\n  width: 100%;\n  color: $colorWhite;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  font-size: 1.4rem;\n}\n"
 
 /***/ }),
 
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/hero-carousel/HeroCarousel.ts":
 /***/ (function(module, exports) {
 
-module.exports = "import AbstractBlock from \"../AbstractBlock\";\n\nexport default class HeroCarousel extends AbstractBlock {\n  static displayName:string = 'hero-carousel';\n\n  constructor(el:HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
+module.exports = "import AbstractBlock from '../AbstractBlock';\n\nexport default class HeroCarousel extends AbstractBlock {\n  static displayName: string = 'hero-carousel';\n\n  constructor(el: HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
 
 /***/ }),
 
@@ -44333,14 +44333,14 @@ module.exports = "<link rel=\"stylesheet\" href=\"./hero-carousel.scss\">\n<scri
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/hero-carousel/hero-carousel.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"hero-carousel\"] {\n  background-color: $colorBlack;\n  height: $blockSize * 6.5;\n\n  @include respond-to(MEDIUM) {\n    height: $blockSize * 10;\n  }\n\n  @include respond-to(LARGE) {\n    height: ($blockSize * 13);\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='hero-carousel'] {\n  background-color: $colorBlack;\n  height: $blockSize * 6.5;\n\n  @include respond-to(MEDIUM) {\n    height: $blockSize * 10;\n  }\n\n  @include respond-to(LARGE) {\n    height: ($blockSize * 13);\n  }\n}\n"
 
 /***/ }),
 
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/hero/Hero.ts":
 /***/ (function(module, exports) {
 
-module.exports = "import AbstractBlock from \"../AbstractBlock\";\n\nexport default class Hero extends AbstractBlock {\n  static displayName:string = 'hero';\n\n  constructor(el:HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
+module.exports = "import AbstractBlock from '../AbstractBlock';\n\nexport default class Hero extends AbstractBlock {\n  static displayName: string = 'hero';\n\n  constructor(el: HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
 
 /***/ }),
 
@@ -44354,14 +44354,14 @@ module.exports = "<link rel=\"stylesheet\" href=\"./hero.scss\">\n<script src=\"
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/hero/hero.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"hero\"] {\n  height: $blockSize * 6.5;\n  display: flex;\n  background: $colorBlack center center;\n  background-size: cover;\n  justify-content: center;\n  align-items: center;\n\n  .hero-title {\n    margin: 0;\n    padding: 0;\n    font-size: 2rem;\n  }\n\n  @include respond-to(MEDIUM) {\n    height: $blockSize * 10;\n\n    .hero-title {\n      font-size: 3rem;\n    }\n  }\n\n  @include respond-to(LARGE) {\n    height: ($blockSize * 13);\n\n    .hero-title {\n      font-size: 5rem;\n    }\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='hero'] {\n  height: $blockSize * 6.5;\n  display: flex;\n  background: $colorBlack center center;\n  background-size: cover;\n  justify-content: center;\n  align-items: center;\n\n  .hero-title {\n    margin: 0;\n    padding: 0;\n    font-size: 2rem;\n  }\n\n  @include respond-to(MEDIUM) {\n    height: $blockSize * 10;\n\n    .hero-title {\n      font-size: 3rem;\n    }\n  }\n\n  @include respond-to(LARGE) {\n    height: ($blockSize * 13);\n\n    .hero-title {\n      font-size: 5rem;\n    }\n  }\n}\n"
 
 /***/ }),
 
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/intro-content/IntroContent.ts":
 /***/ (function(module, exports) {
 
-module.exports = "import AbstractBlock from \"../AbstractBlock\";\n\nexport default class IntroContent extends AbstractBlock {\n  static displayName:string = 'intro-content';\n\n  constructor(el:HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
+module.exports = "import AbstractBlock from '../AbstractBlock';\n\nexport default class IntroContent extends AbstractBlock {\n  static displayName: string = 'intro-content';\n\n  constructor(el: HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
 
 /***/ }),
 
@@ -44375,14 +44375,14 @@ module.exports = "<link rel=\"stylesheet\" href=\"./intro-content.scss\">\n<scri
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/intro-content/intro-content.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"intro-content\"] {\n  .intro-wrapper {\n    padding: $blockSize $blockSize * 0.25 0;\n    width: 100%;\n    max-width: $blockSize * 19;\n    margin: 0 auto;\n  }\n\n  .intro-title {\n    font-size: 2rem;\n  }\n\n  .intro-subtitle {\n    font-size: 1.8rem;\n  }\n\n  @include respond-to(MEDIUM) {\n    padding: 0 $blockSize * 0.5;\n\n    .intro-title {\n      font-size: 3rem;\n    }\n\n    .intro-subtitle {\n      font-size: 2.8rem;\n    }\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='intro-content'] {\n  .intro-wrapper {\n    padding: $blockSize $blockSize * 0.25 0;\n    width: 100%;\n    max-width: $blockSize * 19;\n    margin: 0 auto;\n  }\n\n  .intro-title {\n    font-size: 2rem;\n  }\n\n  .intro-subtitle {\n    font-size: 1.8rem;\n  }\n\n  @include respond-to(MEDIUM) {\n    padding: 0 $blockSize * 0.5;\n\n    .intro-title {\n      font-size: 3rem;\n    }\n\n    .intro-subtitle {\n      font-size: 2.8rem;\n    }\n  }\n}\n"
 
 /***/ }),
 
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/navigation/Navigation.ts":
 /***/ (function(module, exports) {
 
-module.exports = "import AbstractBlock from \"../AbstractBlock\";\n\nexport default class Navigation extends AbstractBlock {\n  static displayName:string = 'navigation';\n\n  constructor(el:HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
+module.exports = "import AbstractBlock from '../AbstractBlock';\n\nexport default class Navigation extends AbstractBlock {\n  static displayName: string = 'navigation';\n\n  constructor(el: HTMLElement) {\n    super(el);\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
 
 /***/ }),
 
@@ -44396,7 +44396,7 @@ module.exports = "<link rel=\"stylesheet\" href=\"./navigation.scss\">\n<script 
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/block/navigation/navigation.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"navigation\"] {\n  .navigation {\n    position: relative;\n    height: 64px;\n    background-color: $colorBlack;\n    display: flex;\n  }\n\n  .site-logo {\n    display: inline-block;\n    padding: $blockSize * .25;\n    text-decoration: none;\n    font-size: 1.6rem;\n    color: $colorWhite;\n\n      img  {\n        height: 100%;\n        width: auto;\n      }\n  }\n\n  .menu {\n    @include position(0);\n    border: 0;\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: flex;\n    justify-content: center;\n    flex-grow: 1;\n    position: absolute;\n    height: 100%;\n  }\n\n  .menu-item {\n    display: block;\n    height: 100%;\n  }\n\n  .menu-link {\n    display: flex;\n    align-items: center;\n    height: 100%;\n    padding: 0 15px;\n    text-decoration: none;\n    transition: color .2s $easeInOutCubic;\n    color: $colorWhite;\n    font-size: 1.5rem;\n\n    @include hover() {\n      color: $colorRed;\n    }\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='navigation'] {\n  .navigation {\n    position: relative;\n    height: 64px;\n    background-color: $colorBlack;\n    display: flex;\n  }\n\n  .site-logo {\n    display: inline-block;\n    padding: $blockSize * 0.25;\n    text-decoration: none;\n    font-size: 1.6rem;\n    color: $colorWhite;\n\n    img {\n      height: 100%;\n      width: auto;\n    }\n  }\n\n  .menu {\n    @include position(0);\n    border: 0;\n    padding: 0;\n    margin: 0;\n    list-style: none;\n    display: flex;\n    justify-content: center;\n    flex-grow: 1;\n    position: absolute;\n    height: 100%;\n  }\n\n  .menu-item {\n    display: block;\n    height: 100%;\n  }\n\n  .menu-link {\n    display: flex;\n    align-items: center;\n    height: 100%;\n    padding: 0 15px;\n    text-decoration: none;\n    transition: color 0.2s $easeInOutCubic;\n    color: $colorWhite;\n    font-size: 1.5rem;\n\n    @include hover() {\n      color: $colorRed;\n    }\n  }\n}\n"
 
 /***/ }),
 
@@ -44410,14 +44410,14 @@ module.exports = "<link rel=\"stylesheet\" href=\"./default-button.scss\">\n\n<a
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/element/default-button/default-button.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"default-button\"] {\n  display: inline-block;\n  padding: 10px;\n  font-weight: bold;\n  font-size: 1.3rem;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  text-decoration: none;\n  position: relative;\n  overflow: hidden;\n  transition: all 250ms ease;\n  border: 2px solid $colorBlack;\n  color: $colorBlack;\n\n  &:after{\n    background-color: $colorBlack;\n  }\n\n  &:hover{\n    color: white;\n\n    &:after{\n      animation-name: bgin;\n      transform: skew(-45deg) translate(-50%);\n    }\n  }\n\n  &:after {\n    content: '';\n    z-index: -1;\n    width: 150%;\n    height: 100%;\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 50%;\n    animation-name: bgout;\n    animation-duration:400ms;\n    transform: skew(-45deg) translate(-150%);\n  }\n}\n\n@keyframes bgin{\n  from {\n    transform: skew(-45deg) translate(-150%);\n  }\n  to {\n    transform: skew(-45deg) translate(-50%);\n  }\n}\n@keyframes bgout{\n  from {\n    transform: skew(-45deg) translate(-50%);\n  }\n  to {\n    transform: skew(-45deg) translate(50%);\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='default-button'] {\n  display: inline-block;\n  padding: 10px;\n  font-weight: bold;\n  font-size: 1.3rem;\n  letter-spacing: 1px;\n  text-transform: uppercase;\n  text-decoration: none;\n  position: relative;\n  overflow: hidden;\n  transition: all 250ms ease;\n  border: 2px solid $colorBlack;\n  color: $colorBlack;\n\n  &:after {\n    background-color: $colorBlack;\n  }\n\n  &:hover {\n    color: white;\n\n    &:after {\n      animation-name: bgin;\n      transform: skew(-45deg) translate(-50%);\n    }\n  }\n\n  &:after {\n    content: '';\n    z-index: -1;\n    width: 150%;\n    height: 100%;\n    display: block;\n    position: absolute;\n    top: 0;\n    left: 50%;\n    animation-name: bgout;\n    animation-duration: 400ms;\n    transform: skew(-45deg) translate(-150%);\n  }\n}\n\n@keyframes bgin {\n  from {\n    transform: skew(-45deg) translate(-150%);\n  }\n  to {\n    transform: skew(-45deg) translate(-50%);\n  }\n}\n@keyframes bgout {\n  from {\n    transform: skew(-45deg) translate(-50%);\n  }\n  to {\n    transform: skew(-45deg) translate(50%);\n  }\n}\n"
 
 /***/ }),
 
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/element/hero-carousel-type/HeroCarouselType.ts":
 /***/ (function(module, exports) {
 
-module.exports = "import AbstractBlock from \"app/component/block/AbstractBlock\";\nimport { TweenMax, Expo } from 'gsap';\nimport Draggable from 'gsap/Draggable';\n\nexport default class HeroCarouselType extends AbstractBlock {\n  static displayName:string = 'hero-carousel-type';\n\n  private _carousel: HTMLElement;\n  private _carouselItems: Array<Element>;\n  private _draggable: Draggable;\n  private _bullets: HTMLElement;\n  private _currentItem: number = 0;\n  private _newItem: number = 0;\n  private _realIndex: number = 0;\n  private _previousItem: number = 0;\n\n  private _nextButton: HTMLElement;\n  private _previousButton: HTMLElement;\n\n  private _isDragging: boolean;\n  private _items: Array<HTMLElement> = [];\n\n  constructor(el:HTMLElement) {\n    super(el);\n\n    this._carousel = <HTMLElement>el.querySelector('.js-hero-carousel');\n    this._carouselItems =\n      <Array<HTMLElement>>Array.from(el.querySelectorAll('.js-hero-carousel-item'));\n\n    // init at the next tick\n    setTimeout(() => {\n      this.setEvents();\n      this.init();\n    }, 500);\n  }\n\n  private setEvents(): void {\n    if (this._carouselItems.length > 1) {\n      this._nextButton = <HTMLElement>this.element.querySelector('.js-next');\n      if (this._nextButton) {\n        this._nextButton.addEventListener('click', this.handleArrowClick.bind(this, 'next'));\n      }\n\n      this._previousButton = <HTMLElement>this.element.querySelector('.js-previous');\n      if (this._previousButton) {\n        this._previousButton.addEventListener('click', this.handleArrowClick.bind(this, 'previous'));\n      }\n    }\n  }\n\n  private init(): void {\n    if (this._carouselItems.length > 1) {\n      this.setItems();\n      this.createDraggable();\n      this.createBullets();\n      this.updateUIStatus();\n    }\n  }\n\n  private setItems(): void {\n    this._items.length = 0;\n\n    this._carouselItems.forEach((element, index) => {\n      const position = index * 100;\n\n      this._items.push(<HTMLElement>element);\n      TweenMax.set(element, { x: position + '%' });\n    });\n  }\n\n  private handleArrowClick = (direction:string): void => {\n    if (this._carouselItems.length > 1) {\n      this._newItem = direction === 'next' ? this._newItem + 1 : this._newItem - 1;\n      this.handleItemChange();\n    }\n  };\n\n  private goToItem = (index: number): void => {\n    this._newItem = index;\n    this.handleItemChange();\n  };\n\n  private createDraggable(): void {\n      this._draggable = Draggable.create(this._carousel, {\n        type: 'x',\n        bounds: this._carousel,\n        zIndexBoost: false,\n        dragClickables: true,\n        dragResistance: 0,\n        edgeResistance: 0,\n        throwResistance: 2500,\n        minimumMovement: 6,\n        cursor: 'grabbing',\n        onDragStart: this.handleDragStart,\n        onDrag: this.handleDrag,\n        onDragEnd: this.handleDragEnd,\n      })[0];\n  }\n\n  private handleDragStart = (): void => {\n    this._isDragging = true;\n  };\n\n  private handleDrag = () => {\n    const elementWidth = this.element.offsetWidth;\n    const currentX = this._newItem * elementWidth;\n\n    this._currentItem =\n      this._draggable.x + currentX < currentX ? this._newItem + 1 : this._newItem - 1;\n\n    this.checkItemReposition();\n  };\n\n  private handleDragEnd = (): void => {\n    this._isDragging = false;\n\n    const elementWidth = this.element.offsetWidth;\n    const currentX = this._newItem * elementWidth;\n\n    if (\n      this._draggable.x > -elementWidth / 8 &&\n      this._draggable.x < elementWidth / 8\n    ) {\n      this.setCarouselPosition();\n      return;\n    }\n\n    if (this._draggable.x + currentX < currentX) {\n      this._newItem = this._newItem + 1;\n      this.handleItemChange()\n    } else {\n      this._newItem = this._newItem - 1;\n      this.handleItemChange();\n    }\n  };\n\n  private setCarouselPosition(): void {\n    TweenMax.to(this._carousel, 1, {\n      x: Math.round(this._newItem * 100 * -1) + '%',\n      ease: Expo.easeOut,\n    });\n\n    this._previousItem = this._newItem;\n    this._currentItem = this._newItem;\n  }\n\n  private handleItemChange(): void {\n\n    if (!this._isDragging) {\n      this._currentItem = this._newItem;\n\n      this.updateUIStatus();\n      this.checkItemReposition();\n      this.setCarouselPosition();\n    }\n  }\n\n  private checkItemReposition(): void {\n    const position: number = this._currentItem * 100;\n    const numItems: number = this._carouselItems.length;\n    const nextElementKey = (this.getCurrentIndex() + numItems) % numItems;\n\n    const nextItem: HTMLElement = this._items[nextElementKey];\n    TweenMax.set(nextItem, { x: position + '%' });\n  }\n\n  private getCurrentIndex(): number {\n    let item = this._currentItem;\n    const numItems = this._carouselItems.length;\n    while (item < 0) {\n      item += numItems;\n    }\n\n    return item % numItems;\n  }\n\n  // UPDATE UI\n  private updateUIStatus(): void {\n    this._realIndex = this.getCurrentIndex();\n\n    if (this._bullets) {\n      const bullets = Array.prototype.slice.call(\n        this._bullets.querySelectorAll('.js-button'),\n      );\n\n      bullets.forEach((bullet, index) => {\n        if (index === this._realIndex) {\n          bullet.classList.add('is-active');\n        } else {\n          bullet.classList.remove('is-active');\n        }\n      });\n    }\n  }\n\n  // CREATE NAVIGATION BULLETS\n  private createBullets(): void {\n    this._bullets = <HTMLElement>this.element.querySelector('.js-bullets');\n    if (this._bullets) {\n      this._bullets.innerHTML = '';\n\n      for (let i = 0; i < this._carouselItems.length; i++) {\n        const button = document.createElement('button');\n        button.classList.add('bullet-button');\n        button.classList.add('js-button');\n        button.addEventListener('click', this.goToItem.bind(this, i));\n\n        const li = document.createElement('li');\n        li.classList.add('bullet-item');\n        li.appendChild(button);\n\n        this._bullets.appendChild(li);\n      }\n    }\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
+module.exports = "import AbstractBlock from 'app/component/block/AbstractBlock';\nimport { TweenMax, Expo } from 'gsap';\nimport Draggable from 'gsap/Draggable';\n\nexport default class HeroCarouselType extends AbstractBlock {\n  static displayName: string = 'hero-carousel-type';\n\n  private _carousel: HTMLElement;\n  private _carouselItems: Array<Element>;\n  private _draggable: Draggable;\n  private _bullets: HTMLElement;\n  private _currentItem: number = 0;\n  private _newItem: number = 0;\n  private _realIndex: number = 0;\n  private _previousItem: number = 0;\n\n  private _nextButton: HTMLElement;\n  private _previousButton: HTMLElement;\n\n  private _isDragging: boolean;\n  private _items: Array<HTMLElement> = [];\n\n  constructor(el: HTMLElement) {\n    super(el);\n\n    this._carousel = <HTMLElement>el.querySelector('.js-hero-carousel');\n    this._carouselItems = <Array<HTMLElement>>Array.from(\n      el.querySelectorAll('.js-hero-carousel-item'),\n    );\n\n    // init at the next tick\n    setTimeout(() => {\n      this.setEvents();\n      this.init();\n    }, 500);\n  }\n\n  private setEvents(): void {\n    if (this._carouselItems.length > 1) {\n      this._nextButton = <HTMLElement>this.element.querySelector('.js-next');\n      if (this._nextButton) {\n        this._nextButton.addEventListener('click', this.handleArrowClick.bind(this, 'next'));\n      }\n\n      this._previousButton = <HTMLElement>this.element.querySelector('.js-previous');\n      if (this._previousButton) {\n        this._previousButton.addEventListener(\n          'click',\n          this.handleArrowClick.bind(this, 'previous'),\n        );\n      }\n    }\n  }\n\n  private init(): void {\n    if (this._carouselItems.length > 1) {\n      this.setItems();\n      this.createDraggable();\n      this.createBullets();\n      this.updateUIStatus();\n    }\n  }\n\n  private setItems(): void {\n    this._items.length = 0;\n\n    this._carouselItems.forEach((element, index) => {\n      const position = index * 100;\n\n      this._items.push(<HTMLElement>element);\n      TweenMax.set(element, { x: position + '%' });\n    });\n  }\n\n  private handleArrowClick = (direction: string): void => {\n    if (this._carouselItems.length > 1) {\n      this._newItem = direction === 'next' ? this._newItem + 1 : this._newItem - 1;\n      this.handleItemChange();\n    }\n  };\n\n  private goToItem = (index: number): void => {\n    this._newItem = index;\n    this.handleItemChange();\n  };\n\n  private createDraggable(): void {\n    this._draggable = Draggable.create(this._carousel, {\n      type: 'x',\n      bounds: this._carousel,\n      zIndexBoost: false,\n      dragClickables: true,\n      dragResistance: 0,\n      edgeResistance: 0,\n      throwResistance: 2500,\n      minimumMovement: 6,\n      cursor: 'grabbing',\n      onDragStart: this.handleDragStart,\n      onDrag: this.handleDrag,\n      onDragEnd: this.handleDragEnd,\n    })[0];\n  }\n\n  private handleDragStart = (): void => {\n    this._isDragging = true;\n  };\n\n  private handleDrag = () => {\n    const elementWidth = this.element.offsetWidth;\n    const currentX = this._newItem * elementWidth;\n\n    this._currentItem =\n      this._draggable.x + currentX < currentX ? this._newItem + 1 : this._newItem - 1;\n\n    this.checkItemReposition();\n  };\n\n  private handleDragEnd = (): void => {\n    this._isDragging = false;\n\n    const elementWidth = this.element.offsetWidth;\n    const currentX = this._newItem * elementWidth;\n\n    if (this._draggable.x > -elementWidth / 8 && this._draggable.x < elementWidth / 8) {\n      this.setCarouselPosition();\n      return;\n    }\n\n    if (this._draggable.x + currentX < currentX) {\n      this._newItem = this._newItem + 1;\n      this.handleItemChange();\n    } else {\n      this._newItem = this._newItem - 1;\n      this.handleItemChange();\n    }\n  };\n\n  private setCarouselPosition(): void {\n    TweenMax.to(this._carousel, 1, {\n      x: Math.round(this._newItem * 100 * -1) + '%',\n      ease: Expo.easeOut,\n    });\n\n    this._previousItem = this._newItem;\n    this._currentItem = this._newItem;\n  }\n\n  private handleItemChange(): void {\n    if (!this._isDragging) {\n      this._currentItem = this._newItem;\n\n      this.updateUIStatus();\n      this.checkItemReposition();\n      this.setCarouselPosition();\n    }\n  }\n\n  private checkItemReposition(): void {\n    const position: number = this._currentItem * 100;\n    const numItems: number = this._carouselItems.length;\n    const nextElementKey = (this.getCurrentIndex() + numItems) % numItems;\n\n    const nextItem: HTMLElement = this._items[nextElementKey];\n    TweenMax.set(nextItem, { x: position + '%' });\n  }\n\n  private getCurrentIndex(): number {\n    let item = this._currentItem;\n    const numItems = this._carouselItems.length;\n    while (item < 0) {\n      item += numItems;\n    }\n\n    return item % numItems;\n  }\n\n  // UPDATE UI\n  private updateUIStatus(): void {\n    this._realIndex = this.getCurrentIndex();\n\n    if (this._bullets) {\n      const bullets = Array.prototype.slice.call(this._bullets.querySelectorAll('.js-button'));\n\n      bullets.forEach((bullet, index) => {\n        if (index === this._realIndex) {\n          bullet.classList.add('is-active');\n        } else {\n          bullet.classList.remove('is-active');\n        }\n      });\n    }\n  }\n\n  // CREATE NAVIGATION BULLETS\n  private createBullets(): void {\n    this._bullets = <HTMLElement>this.element.querySelector('.js-bullets');\n    if (this._bullets) {\n      this._bullets.innerHTML = '';\n\n      for (let i = 0; i < this._carouselItems.length; i++) {\n        const button = document.createElement('button');\n        button.classList.add('bullet-button');\n        button.classList.add('js-button');\n        button.addEventListener('click', this.goToItem.bind(this, i));\n\n        const li = document.createElement('li');\n        li.classList.add('bullet-item');\n        li.appendChild(button);\n\n        this._bullets.appendChild(li);\n      }\n    }\n  }\n\n  public dispose() {\n    super.dispose();\n  }\n}\n"
 
 /***/ }),
 
@@ -44431,7 +44431,7 @@ module.exports = "<link rel=\"stylesheet\" href=\"./hero-carousel-type.scss\">\n
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/element/hero-carousel-type/hero-carousel-type.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"hero-carousel-type\"] {\n  @include size(100%);\n  position: relative;\n  background-color: $colorBlack;\n  color: $colorWhite;\n  overflow: hidden;\n\n  .hero-carousel-list {\n    @include size(100%);\n    position: absolute;\n    top: 0;\n    left: 0;\n    list-style: none;\n    border: 0;\n    margin: 0;\n    padding: 0;\n  }\n\n  .hero-carousel-item {\n    @include size(100%);\n    position: absolute;\n    top: 0;\n    left: 0;\n    background-size: cover;\n    background-position: center center;\n  }\n\n  .navigation-bullets {\n    margin: 0;\n    padding: 0;\n    font-size: 0;\n    text-align: center;\n    color: $colorBlack;\n    position: absolute;\n    bottom: $blockSize * .5;\n    width: 100%;\n\n    &.light {\n      color: $colorWhite;\n    }\n  }\n  .bullet-item {\n    display: inline-block;\n    vertical-align: middle;\n    margin: 0 $bulletSize;\n    padding: 0;\n  }\n  .bullet-button {\n    @include size($bulletSize);\n    position: relative;\n    display: block;\n    cursor: pointer;\n    color: currentColor;\n    background-color: transparent;\n    border: 0;\n    margin: 0;\n    padding: 0;\n    outline: none;\n\n    &:before {\n      @include size($bulletSize);\n      display: block;\n      margin: 0;\n      content: '';\n      border: 1px solid currentColor;\n      border-radius: 50%;\n      transition: border 200ms linear;\n    }\n\n    &.is-active:before {\n      border-width: 1px solid currentColor;\n      padding: 0;\n      background: currentColor;\n      margin: 0;\n    }\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='hero-carousel-type'] {\n  @include size(100%);\n  position: relative;\n  background-color: $colorBlack;\n  color: $colorWhite;\n  overflow: hidden;\n\n  .hero-carousel-list {\n    @include size(100%);\n    position: absolute;\n    top: 0;\n    left: 0;\n    list-style: none;\n    border: 0;\n    margin: 0;\n    padding: 0;\n  }\n\n  .hero-carousel-item {\n    @include size(100%);\n    position: absolute;\n    top: 0;\n    left: 0;\n    background-size: cover;\n    background-position: center center;\n  }\n\n  .navigation-bullets {\n    margin: 0;\n    padding: 0;\n    font-size: 0;\n    text-align: center;\n    color: $colorBlack;\n    position: absolute;\n    bottom: $blockSize * 0.5;\n    width: 100%;\n\n    &.light {\n      color: $colorWhite;\n    }\n  }\n  .bullet-item {\n    display: inline-block;\n    vertical-align: middle;\n    margin: 0 $bulletSize;\n    padding: 0;\n  }\n  .bullet-button {\n    @include size($bulletSize);\n    position: relative;\n    display: block;\n    cursor: pointer;\n    color: currentColor;\n    background-color: transparent;\n    border: 0;\n    margin: 0;\n    padding: 0;\n    outline: none;\n\n    &:before {\n      @include size($bulletSize);\n      display: block;\n      margin: 0;\n      content: '';\n      border: 1px solid currentColor;\n      border-radius: 50%;\n      transition: border 200ms linear;\n    }\n\n    &.is-active:before {\n      border-width: 1px solid currentColor;\n      padding: 0;\n      background: currentColor;\n      margin: 0;\n    }\n  }\n}\n"
 
 /***/ }),
 
@@ -44445,7 +44445,7 @@ module.exports = "<link rel=\"stylesheet\" href=\"./paragraph.scss\">\n\n<div da
 /***/ "./node_modules/raw-loader/index.js!./src/app/component/element/paragraph/paragraph.scss":
 /***/ (function(module, exports) {
 
-module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component=\"paragraph\"] {\n  .paragraph {\n    font-size: 1.6rem;\n    line-height: 1.5;\n  }\n}\n"
+module.exports = "/* stylelint-disable-next-line block-no-empty */\n[data-component='paragraph'] {\n  .paragraph {\n    font-size: 1.6rem;\n    line-height: 1.5;\n  }\n}\n"
 
 /***/ }),
 
@@ -44666,16 +44666,16 @@ var BlogPost = function (_AbstractBlock) {
     }
 
     _createClass(BlogPost, [{
-        key: "dispose",
+        key: 'dispose',
         value: function dispose() {
-            _get(BlogPost.prototype.__proto__ || Object.getPrototypeOf(BlogPost.prototype), "dispose", this).call(this);
+            _get(BlogPost.prototype.__proto__ || Object.getPrototypeOf(BlogPost.prototype), 'dispose', this).call(this);
         }
     }]);
 
     return BlogPost;
 }(__WEBPACK_IMPORTED_MODULE_0__AbstractBlock__["a" /* default */]);
 
-BlogPost.displayName = "BlogPost";
+BlogPost.displayName = 'BlogPost';
 /* harmony default export */ __webpack_exports__["default"] = (BlogPost);
 
 BlogPost.displayName = 'blog-post';
@@ -44795,16 +44795,16 @@ var Footer = function (_AbstractBlock) {
     }
 
     _createClass(Footer, [{
-        key: "dispose",
+        key: 'dispose',
         value: function dispose() {
-            _get(Footer.prototype.__proto__ || Object.getPrototypeOf(Footer.prototype), "dispose", this).call(this);
+            _get(Footer.prototype.__proto__ || Object.getPrototypeOf(Footer.prototype), 'dispose', this).call(this);
         }
     }]);
 
     return Footer;
 }(__WEBPACK_IMPORTED_MODULE_0__AbstractBlock__["a" /* default */]);
 
-Footer.displayName = "Footer";
+Footer.displayName = 'Footer';
 /* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 Footer.displayName = 'footer';
@@ -44910,16 +44910,16 @@ var HeroCarousel = function (_AbstractBlock) {
     }
 
     _createClass(HeroCarousel, [{
-        key: "dispose",
+        key: 'dispose',
         value: function dispose() {
-            _get(HeroCarousel.prototype.__proto__ || Object.getPrototypeOf(HeroCarousel.prototype), "dispose", this).call(this);
+            _get(HeroCarousel.prototype.__proto__ || Object.getPrototypeOf(HeroCarousel.prototype), 'dispose', this).call(this);
         }
     }]);
 
     return HeroCarousel;
 }(__WEBPACK_IMPORTED_MODULE_0__AbstractBlock__["a" /* default */]);
 
-HeroCarousel.displayName = "HeroCarousel";
+HeroCarousel.displayName = 'HeroCarousel';
 /* harmony default export */ __webpack_exports__["default"] = (HeroCarousel);
 
 HeroCarousel.displayName = 'hero-carousel';
@@ -45023,16 +45023,16 @@ var Hero = function (_AbstractBlock) {
     }
 
     _createClass(Hero, [{
-        key: "dispose",
+        key: 'dispose',
         value: function dispose() {
-            _get(Hero.prototype.__proto__ || Object.getPrototypeOf(Hero.prototype), "dispose", this).call(this);
+            _get(Hero.prototype.__proto__ || Object.getPrototypeOf(Hero.prototype), 'dispose', this).call(this);
         }
     }]);
 
     return Hero;
 }(__WEBPACK_IMPORTED_MODULE_0__AbstractBlock__["a" /* default */]);
 
-Hero.displayName = "Hero";
+Hero.displayName = 'Hero';
 /* harmony default export */ __webpack_exports__["default"] = (Hero);
 
 Hero.displayName = 'hero';
@@ -45138,16 +45138,16 @@ var IntroContent = function (_AbstractBlock) {
     }
 
     _createClass(IntroContent, [{
-        key: "dispose",
+        key: 'dispose',
         value: function dispose() {
-            _get(IntroContent.prototype.__proto__ || Object.getPrototypeOf(IntroContent.prototype), "dispose", this).call(this);
+            _get(IntroContent.prototype.__proto__ || Object.getPrototypeOf(IntroContent.prototype), 'dispose', this).call(this);
         }
     }]);
 
     return IntroContent;
 }(__WEBPACK_IMPORTED_MODULE_0__AbstractBlock__["a" /* default */]);
 
-IntroContent.displayName = "IntroContent";
+IntroContent.displayName = 'IntroContent';
 /* harmony default export */ __webpack_exports__["default"] = (IntroContent);
 
 IntroContent.displayName = 'intro-content';
@@ -45259,16 +45259,16 @@ var Navigation = function (_AbstractBlock) {
     }
 
     _createClass(Navigation, [{
-        key: "dispose",
+        key: 'dispose',
         value: function dispose() {
-            _get(Navigation.prototype.__proto__ || Object.getPrototypeOf(Navigation.prototype), "dispose", this).call(this);
+            _get(Navigation.prototype.__proto__ || Object.getPrototypeOf(Navigation.prototype), 'dispose', this).call(this);
         }
     }]);
 
     return Navigation;
 }(__WEBPACK_IMPORTED_MODULE_0__AbstractBlock__["a" /* default */]);
 
-Navigation.displayName = "Navigation";
+Navigation.displayName = 'Navigation';
 /* harmony default export */ __webpack_exports__["default"] = (Navigation);
 
 Navigation.displayName = 'navigation';

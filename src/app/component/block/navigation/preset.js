@@ -7,5 +7,5 @@ storiesOf('navigation', require('./navigation.hbs')).add(
   `<hbs>
 			{{> navigation @root}}
 		</hbs>`,
-  require('./default.json'),
+  require('./data.json'),
 );

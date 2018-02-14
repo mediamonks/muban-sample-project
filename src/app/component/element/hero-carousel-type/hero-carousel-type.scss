@@ -1,5 +1,5 @@
 /* stylelint-disable-next-line block-no-empty */
-[data-component="hero-carousel-type"] {
+[data-component='hero-carousel-type'] {
   @include size(100%);
   position: relative;
   background-color: $colorBlack;
@@ -33,7 +33,7 @@
     text-align: center;
     color: $colorBlack;
     position: absolute;
-    bottom: $blockSize * .5;
+    bottom: $blockSize * 0.5;
     width: 100%;
 
     &.light {

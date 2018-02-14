@@ -7,5 +7,5 @@ storiesOf('blog-post', require('./blog-post.hbs')).add(
   `<hbs>
 			{{> blog-post @root}}
 		</hbs>`,
-  require('./default.json'),
+  require('./data.json'),
 );

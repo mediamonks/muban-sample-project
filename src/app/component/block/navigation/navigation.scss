@@ -1,5 +1,5 @@
 /* stylelint-disable-next-line block-no-empty */
-[data-component="navigation"] {
+[data-component='navigation'] {
   .navigation {
     position: relative;
     height: 64px;
@@ -9,15 +9,15 @@
 
   .site-logo {
     display: inline-block;
-    padding: $blockSize * .25;
+    padding: $blockSize * 0.25;
     text-decoration: none;
     font-size: 1.6rem;
     color: $colorWhite;
 
-      img  {
-        height: 100%;
-        width: auto;
-      }
+    img {
+      height: 100%;
+      width: auto;
+    }
   }
 
   .menu {
@@ -44,7 +44,7 @@
     height: 100%;
     padding: 0 15px;
     text-decoration: none;
-    transition: color .2s $easeInOutCubic;
+    transition: color 0.2s $easeInOutCubic;
     color: $colorWhite;
     font-size: 1.5rem;
 

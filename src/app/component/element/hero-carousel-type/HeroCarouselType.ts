@@ -1,9 +1,9 @@
-import AbstractBlock from "app/component/block/AbstractBlock";
+import AbstractBlock from 'app/component/block/AbstractBlock';
 import { TweenMax, Expo } from 'gsap';
 import Draggable from 'gsap/Draggable';
 
 export default class HeroCarouselType extends AbstractBlock {
-  static displayName:string = 'hero-carousel-type';
+  static displayName: string = 'hero-carousel-type';
 
   private _carousel: HTMLElement;
   private _carouselItems: Array<Element>;
@@ -20,12 +20,13 @@ export default class HeroCarouselType extends AbstractBlock {
   private _isDragging: boolean;
   private _items: Array<HTMLElement> = [];
 
-  constructor(el:HTMLElement) {
+  constructor(el: HTMLElement) {
     super(el);
 
     this._carousel = <HTMLElement>el.querySelector('.js-hero-carousel');
-    this._carouselItems =
-      <Array<HTMLElement>>Array.from(el.querySelectorAll('.js-hero-carousel-item'));
+    this._carouselItems = <Array<HTMLElement>>Array.from(
+      el.querySelectorAll('.js-hero-carousel-item'),
+    );
 
     // init at the next tick
     setTimeout(() => {
@@ -37,10 +38,17 @@ export default class HeroCarouselType extends AbstractBlock {
   private setEvents(): void {
     if (this._carouselItems.length > 1) {
       this._nextButton = <HTMLElement>this.element.querySelector('.js-next');
-      this._nextButton.addEventListener('click', this.handleArrowClick.bind(this, 'next'));
+      if (this._nextButton) {
+        this._nextButton.addEventListener('click', this.handleArrowClick.bind(this, 'next'));
+      }
 
       this._previousButton = <HTMLElement>this.element.querySelector('.js-previous');
-      this._previousButton.addEventListener('click', this.handleArrowClick.bind(this, 'previous'));
+      if (this._previousButton) {
+        this._previousButton.addEventListener(
+          'click',
+          this.handleArrowClick.bind(this, 'previous'),
+        );
+      }
     }
   }
 
@@ -64,7 +72,7 @@ export default class HeroCarouselType extends AbstractBlock {
     });
   }
 
-  private handleArrowClick = (direction:string): void => {
+  private handleArrowClick = (direction: string): void => {
     if (this._carouselItems.length > 1) {
       this._newItem = direction === 'next' ? this._newItem + 1 : this._newItem - 1;
       this.handleItemChange();
@@ -77,20 +85,20 @@ export default class HeroCarouselType extends AbstractBlock {
   };
 
   private createDraggable(): void {
-      this._draggable = Draggable.create(this._carousel, {
-        type: 'x',
-        bounds: this._carousel,
-        zIndexBoost: false,
-        dragClickables: true,
-        dragResistance: 0,
-        edgeResistance: 0,
-        throwResistance: 2500,
-        minimumMovement: 6,
-        cursor: 'grabbing',
-        onDragStart: this.handleDragStart,
-        onDrag: this.handleDrag,
-        onDragEnd: this.handleDragEnd,
-      })[0];
+    this._draggable = Draggable.create(this._carousel, {
+      type: 'x',
+      bounds: this._carousel,
+      zIndexBoost: false,
+      dragClickables: true,
+      dragResistance: 0,
+      edgeResistance: 0,
+      throwResistance: 2500,
+      minimumMovement: 6,
+      cursor: 'grabbing',
+      onDragStart: this.handleDragStart,
+      onDrag: this.handleDrag,
+      onDragEnd: this.handleDragEnd,
+    })[0];
   }
 
   private handleDragStart = (): void => {
@@ -113,17 +121,14 @@ export default class HeroCarouselType extends AbstractBlock {
     const elementWidth = this.element.offsetWidth;
     const currentX = this._newItem * elementWidth;
 
-    if (
-      this._draggable.x > -elementWidth / 8 &&
-      this._draggable.x < elementWidth / 8
-    ) {
+    if (this._draggable.x > -elementWidth / 8 && this._draggable.x < elementWidth / 8) {
       this.setCarouselPosition();
       return;
     }
 
     if (this._draggable.x + currentX < currentX) {
       this._newItem = this._newItem + 1;
-      this.handleItemChange()
+      this.handleItemChange();
     } else {
       this._newItem = this._newItem - 1;
       this.handleItemChange();
@@ -141,7 +146,6 @@ export default class HeroCarouselType extends AbstractBlock {
   }
 
   private handleItemChange(): void {
-
     if (!this._isDragging) {
       this._currentItem = this._newItem;
 
@@ -175,9 +179,7 @@ export default class HeroCarouselType extends AbstractBlock {
     this._realIndex = this.getCurrentIndex();
 
     if (this._bullets) {
-      const bullets = Array.prototype.slice.call(
-        this._bullets.querySelectorAll('.js-button'),
-      );
+      const bullets = Array.prototype.slice.call(this._bullets.querySelectorAll('.js-button'));
 
       bullets.forEach((bullet, index) => {
         if (index === this._realIndex) {

@@ -1,9 +1,9 @@
-import AbstractBlock from "../AbstractBlock";
+import AbstractBlock from '../AbstractBlock';
 
 export default class Footer extends AbstractBlock {
-  static displayName:string = 'footer';
+  static displayName: string = 'footer';
 
-  constructor(el:HTMLElement) {
+  constructor(el: HTMLElement) {
     super(el);
   }
 

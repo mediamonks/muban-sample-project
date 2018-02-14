@@ -15,7 +15,9 @@ html {
   background-image: url('~app/image/bg-pattern.jpg');
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 

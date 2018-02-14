@@ -7,5 +7,5 @@ storiesOf('hero', require('./hero.hbs')).add(
   `<hbs>
 			{{> hero @root}}
 		</hbs>`,
-  require('./default.json'),
+  require('./data.json'),
 );

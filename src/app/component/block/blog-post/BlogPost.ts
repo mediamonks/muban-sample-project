@@ -1,9 +1,9 @@
-import AbstractBlock from "../AbstractBlock";
+import AbstractBlock from '../AbstractBlock';
 
 export default class BlogPost extends AbstractBlock {
-  static displayName:string = 'blog-post';
+  static displayName: string = 'blog-post';
 
-  constructor(el:HTMLElement) {
+  constructor(el: HTMLElement) {
     super(el);
   }
 

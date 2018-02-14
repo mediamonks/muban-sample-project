@@ -1,9 +1,9 @@
-import AbstractBlock from "../AbstractBlock";
+import AbstractBlock from '../AbstractBlock';
 
 export default class Navigation extends AbstractBlock {
-  static displayName:string = 'navigation';
+  static displayName: string = 'navigation';
 
-  constructor(el:HTMLElement) {
+  constructor(el: HTMLElement) {
     super(el);
   }
 

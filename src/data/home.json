@@ -3,23 +3,23 @@
   "blocks": [
     {
       "name": "navigation",
-      "data": "import!../app/component/block/navigation/default.json"
+      "data": "import!../app/component/block/navigation/data.json"
     },
     {
       "name": "hero",
-      "data": "import!../app/component/block/hero/default.json"
+      "data": "import!../app/component/block/hero/data.json"
     },
     {
       "name": "intro-content",
-      "data": "import!../app/component/block/intro-content/default.json"
+      "data": "import!../app/component/block/intro-content/data.json"
     },
     {
       "name": "blog-post",
-      "data": "import!../app/component/block/blog-post/default.json"
+      "data": "import!../app/component/block/blog-post/data.json"
     },
     {
       "name": "footer",
-      "data": "import!../app/component/block/footer/default.json"
+      "data": "import!../app/component/block/footer/data.json"
     }
   ]
 }

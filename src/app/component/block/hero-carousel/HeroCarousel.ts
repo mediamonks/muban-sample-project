@@ -1,9 +1,9 @@
-import AbstractBlock from "../AbstractBlock";
+import AbstractBlock from '../AbstractBlock';
 
 export default class HeroCarousel extends AbstractBlock {
-  static displayName:string = 'hero-carousel';
+  static displayName: string = 'hero-carousel';
 
-  constructor(el:HTMLElement) {
+  constructor(el: HTMLElement) {
     super(el);
   }
 

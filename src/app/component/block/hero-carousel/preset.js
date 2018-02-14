@@ -7,5 +7,5 @@ storiesOf('hero-carousel', require('./hero-carousel.hbs')).add(
   `<hbs>
 			{{> hero-carousel @root}}
 		</hbs>`,
-  require('./default.json'),
+  require('./data.json'),
 );

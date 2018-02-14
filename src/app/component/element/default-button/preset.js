@@ -7,5 +7,7 @@ storiesOf('default-button', require('./default-button.hbs')).add(
   `<hbs>
 			{{> default-button @root}}
 		</hbs>`,
-  {},
+  {
+    label: 'Button Label',
+  },
 );

@@ -7,5 +7,5 @@ storiesOf('intro-content', require('./intro-content.hbs')).add(
   `<hbs>
 			{{> intro-content @root}}
 		</hbs>`,
-  require('./default.json'),
+  require('./data.json'),
 );

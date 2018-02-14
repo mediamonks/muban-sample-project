@@ -7,5 +7,5 @@ storiesOf('footer', require('./footer.hbs')).add(
   `<hbs>
 			{{> footer @root}}
 		</hbs>`,
-  require('./default.json'),
+  require('./data.json'),
 );

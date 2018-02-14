@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+  <meta charSet="utf-8">
+  <title>Muban - home</title>
+
+  <meta httpEquiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/asset/common.css">
+  <link rel="stylesheet" href="/asset/bundle.css">
+</head>
+
+<body>
+
+  <!-- partial: component/layout/app/app.hbs -->
+  <main data-component="app-root">
+
+    <!-- partial: component/block/navigation/navigation.hbs -->
+    <section data-component="navigation">
+      <nav class="navigation">
+        <a href="/" class="site-logo">
+              <img src="/images/navigation/site-logo.png" alt="Muban">
+          </a>
+        <ul class="menu">
+          <li class="menu-item">
+            <a class="menu-link" href="/home.html">
+                  <span class="label">Home</span>
+                </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="/blog.html">
+                  <span class="label">Blog</span>
+                </a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- / component/block/navigation/navigation.hbs -->
+
+    <!-- partial: component/block/hero/hero.hbs -->
+    <section data-component="hero" style="background-image: url('/images/hero-carousel/static-1.jpg')">
+      <h1 class="hero-title">Muban templating</h1>
+    </section>
+    <!-- / component/block/hero/hero.hbs -->
+
+    <!-- partial: component/block/intro-content/intro-content.hbs -->
+    <section data-component="intro-content">
+      <div class="intro-wrapper">
+        <h2 class="intro-title">Intro Title</h2>
+        <h3 class="intro-subtitle">Sub Title</h3>
+
+
+        <!-- partial: component/element/paragraph/paragraph.hbs -->
+        <div data-component="paragraph">
+          <p class="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nulla sapien, euismod et elementum vel, mollis sit amet orci. Suspendisse luctus justo quis consectetur posuere. Sed interdum neque odio, commodo convallis nisl sodales porttitor. In sodales
+            orci enim, nec mollis velit dapibus a. Donec maximus dapibus luctus. Nam ut libero vitae odio blandit porta eget non massa. Mauris vel odio quis libero pharetra molestie sed vulputate orci. Praesent vitae dui ante.
+          </p>
+        </div>
+        <!-- / component/element/paragraph/paragraph.hbs -->
+
+        <!-- partial: component/element/paragraph/paragraph.hbs -->
+        <div data-component="paragraph">
+          <p class="paragraph">
+            Nulla scelerisque, magna a pharetra consequat, quam lectus imperdiet eros, id consequat eros erat quis mauris. Phasellus eu lectus ut justo sagittis molestie. Quisque varius sapien eget mattis interdum. Nunc sed sem hendrerit, egestas felis id, pharetra
+            quam. Proin eget magna lectus. Pellentesque malesuada, ligula non congue luctus, orci metus porttitor dui, sit amet interdum tortor purus ut nibh. Cras sagittis aliquam lectus vel gravida. Etiam pellentesque tristique odio at tristique.
+          </p>
+        </div>
+        <!-- / component/element/paragraph/paragraph.hbs -->
+      </div>
+    </section>
+    <!-- / component/block/intro-content/intro-content.hbs -->
+
+    <!-- partial: component/block/blog-post/blog-post.hbs -->
+    <section data-component="blog-post">
+      <div class="blog-post-wrapper">
+        <div class="post-content">
+          <div class="post-summary">
+            <h3 class="post-tag-line">From the blog</h3>
+            <h2 class="post-title">How to prevent rust and maintain an device</h2>
+            <p class="post-description">
+              You take the cover off your device and what do you see, surface rust! No, the world is not going to end and yes we are here to help you. <br><br> Nulla scelerisque, magna a pharetra consequat, quam lectus imperdiet eros, id consequat eros
+              erat quis mauris. Phasellus eu lectus ut justo sagittis molestie. Quisque varius sapien eget mattis interdum. Nunc sed sem hendrerit, egestas felis id, pharetra quam. Proin eget magna lectus. Pellentesque malesuada, ligula non congue luctus,
+              orci metus porttitor dui, sit amet interdum tortor purus ut nibh. Cras sagittis aliquam lectus vel gravida. Etiam pellentesque tristique odio at tristique.
+            </p>
+          </div>
+
+          <div class="post-buttons">
+            <span class="post-author">
+                By Jan Jansen - Guest Blogger
+              </span>
+
+            <!-- partial: component/element/default-button/default-button.hbs -->
+            <a href="/" data-component="default-button">
+                  Read Full Post
+                </a>
+            <!-- / component/element/default-button/default-button.hbs -->
+
+            <!-- partial: component/element/default-button/default-button.hbs -->
+            <a href="/blog.html" data-component="default-button">
+                  Go To Blog
+                </a>
+            <!-- / component/element/default-button/default-button.hbs -->
+          </div>
+        </div>
+        <div class="post-thumbnail">
+          <img src="/images/blog/thumb.jpg" />
+        </div>
+      </div>
+    </section>
+    <!-- / component/block/blog-post/blog-post.hbs -->
+
+    <!-- partial: component/block/footer/footer.hbs -->
+    <div data-component="footer">
+      <span class="copyright">
+          © MediaMonks - 2018
+        </span>
+    </div>
+    <!-- / component/block/footer/footer.hbs -->
+  </main>
+  <!-- / component/layout/app/app.hbs -->
+
+
+  <script src="/asset/common.js"></script>
+  <script src="/asset/bundle.js"></script>
+</body>
+
+</html>

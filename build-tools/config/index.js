@@ -64,7 +64,7 @@ module.exports = {
       NODE_ENV: JSON.stringify('development'),
     },
     port: 9002,
-    publicPath: '/',
+    publicPath,
     staticPath: path.join(projectRoot, 'src/storybook/static'),
     buildPath: path.join(distPath, 'storybook'),
     // enables specific linters during webpack compilation, which will error your compile

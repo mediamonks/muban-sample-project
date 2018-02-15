@@ -1,13 +1,13 @@
 {
   "slides": [
     {
-      "background-image": "/images/hero-carousel/static-1.jpg"
+      "background-image": "images/hero-carousel/static-1.jpg"
     },
     {
-      "background-image": "/images/hero-carousel/static-2.jpg"
+      "background-image": "images/hero-carousel/static-2.jpg"
     },
     {
-      "background-image": "/images/hero-carousel/static-3.jpg"
+      "background-image": "images/hero-carousel/static-3.jpg"
     }
   ]
 }

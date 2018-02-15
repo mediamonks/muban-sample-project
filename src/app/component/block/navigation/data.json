@@ -1,15 +1,15 @@
 {
-  "site-logo": "/images/navigation/site-logo.png",
+  "site-logo": "images/navigation/site-logo.png",
   "site-name": "Muban",
   "menu": {
     "items": [
       {
         "label": "Home",
-        "url": "/home.html"
+        "url": "home.html"
       },
       {
         "label": "Blog",
-        "url": "/blog.html"
+        "url": "blog.html"
       }
     ]
   }

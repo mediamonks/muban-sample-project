@@ -24,6 +24,14 @@ If you're a developer that needs to implement the dist build into an existing ba
 read the [implementation guide](./docs/dist-implementation-guide.md) that is also distributed with
 the build output.
 
+## Demo
+
+To view a very basic Muban site and storybook for the code in this repository, please check these
+demo links:
+
+* [Demo site](https://mediamonks.github.io/muban-sample-project/site/home.html)
+* [Demo storybook](https://mediamonks.github.io/muban-sample-project/storybook/)
+
 ## Setup
 
 After cloning this repos and removing the `.git` folder, run:

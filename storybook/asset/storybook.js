@@ -61,7 +61,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "5db1429d5a40807f3e94"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "1318e0ed45d6b8339586"; // eslint-disable-line no-unused-vars
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule; // eslint-disable-line no-unused-vars
@@ -61058,7 +61058,7 @@ module.exports = (Handlebars["default"] || Handlebars).template({"1":function(co
 /***/ "./src/app/component/block/blog-post/data.json":
 /***/ (function(module, exports) {
 
-module.exports = {"tag-line":"From the blog","title":"How to prevent rust and maintain an device","author":"Jan Jansen","author-role":"Guest Blogger","description":"You take the cover off your device and what do you see, surface rust! No, the world is not going to end and yes we are here to help you. <br><br> Nulla scelerisque, magna a pharetra consequat, quam lectus imperdiet eros, id consequat eros erat quis mauris. Phasellus eu lectus ut justo sagittis molestie. Quisque varius sapien eget mattis interdum. Nunc sed sem hendrerit, egestas felis id, pharetra quam. Proin eget magna lectus. Pellentesque malesuada, ligula non congue luctus, orci metus porttitor dui, sit amet interdum tortor purus ut nibh. Cras sagittis aliquam lectus vel gravida. Etiam pellentesque tristique odio at tristique.","thumbnail":"/images/blog/thumb.jpg","buttons":[{"label":"Read Full Post","url":"/"},{"label":"Go To Blog","url":"/blog.html"}]}
+module.exports = {"tag-line":"From the blog","title":"How to prevent rust and maintain an device","author":"Jan Jansen","author-role":"Guest Blogger","description":"You take the cover off your device and what do you see, surface rust! No, the world is not going to end and yes we are here to help you. <br><br> Nulla scelerisque, magna a pharetra consequat, quam lectus imperdiet eros, id consequat eros erat quis mauris. Phasellus eu lectus ut justo sagittis molestie. Quisque varius sapien eget mattis interdum. Nunc sed sem hendrerit, egestas felis id, pharetra quam. Proin eget magna lectus. Pellentesque malesuada, ligula non congue luctus, orci metus porttitor dui, sit amet interdum tortor purus ut nibh. Cras sagittis aliquam lectus vel gravida. Etiam pellentesque tristique odio at tristique.","thumbnail":"images/blog/thumb.jpg","buttons":[{"label":"Read Full Post","url":"/"},{"label":"Go To Blog","url":"/blog.html"}]}
 
 /***/ }),
 
@@ -61245,7 +61245,7 @@ HeroCarousel.displayName = 'hero-carousel';
 /***/ "./src/app/component/block/hero-carousel/data.json":
 /***/ (function(module, exports) {
 
-module.exports = {"slides":[{"background-image":"/images/hero-carousel/static-1.jpg"},{"background-image":"/images/hero-carousel/static-2.jpg"},{"background-image":"/images/hero-carousel/static-3.jpg"}]}
+module.exports = {"slides":[{"background-image":"images/hero-carousel/static-1.jpg"},{"background-image":"images/hero-carousel/static-2.jpg"},{"background-image":"images/hero-carousel/static-3.jpg"}]}
 
 /***/ }),
 
@@ -61358,7 +61358,7 @@ Hero.displayName = 'hero';
 /***/ "./src/app/component/block/hero/data.json":
 /***/ (function(module, exports) {
 
-module.exports = {"title":"Muban templating","background-image":"/images/hero-carousel/static-1.jpg"}
+module.exports = {"title":"Muban templating","background-image":"images/hero-carousel/static-1.jpg"}
 
 /***/ }),
 
@@ -61594,7 +61594,7 @@ Navigation.displayName = 'navigation';
 /***/ "./src/app/component/block/navigation/data.json":
 /***/ (function(module, exports) {
 
-module.exports = {"site-logo":"/images/navigation/site-logo.png","site-name":"Muban","menu":{"items":[{"label":"Home","url":"/home.html"},{"label":"Blog","url":"/blog.html"}]}}
+module.exports = {"site-logo":"images/navigation/site-logo.png","site-name":"Muban","menu":{"items":[{"label":"Home","url":"home.html"},{"label":"Blog","url":"blog.html"}]}}
 
 /***/ }),
 
